@@ -54,6 +54,7 @@
         font-size: 0.8rem
         &--disable
             background-color: rgba(83, 121, 133, 0.3)
+            pointer-events: none
 .news
     width: 80%
     &__post
@@ -69,9 +70,11 @@
         width: 48px
     &__avatar-img
         width: 100%
-        object-fit: contain
+        height: 100%
+        object-fit: cover
         border-radius: 50%
     &__top
+        margin-top: 1rem
         display: flex
         align-items: center
     &__author
