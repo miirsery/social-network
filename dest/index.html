@@ -24,18 +24,19 @@
 
 </header>
 
-    <div class="container">
-        <div class="main-view">
-            <aside class="aside">
+    <main class="main">
+        <div class="container">
+            <div class="main-view">
+                <aside class="aside">
     <ul class="aisde__items">
         <li class="aisde__item">
-            <a class="aside__link aside__link-home" href="#">
+            <a class="aside__link aside__link-home aside__link--active" href="#">
                 <div class="aside__link-img aside__link-img-home"></div>
                 <p class="aside__link-text">Home</p>
             </a>
         </li>
         <li class="aisde__item">
-            <a class="aside__link aside__link-messages" href="#">
+            <a class="aside__link aside__link-messages " href="#">
                 <div class="aside__link-img aside__link-img-messages"></div>
                 <p class="aside__link-text">Messages</p>
             </a>
@@ -52,13 +53,115 @@
                 <p class="aside__link-text">Profile</p>
             </a>
         </li>
+        
     </ul>
-    <button class="aside__publish">Publish</button>
+    <button class="aside__publish">
+        <span>Publish</span>
+    </button>
 </aside>
-            
-
+                <div class="main-content">
+    <div class="publish-new publish">
+        <a class="publish__avatar" href="#">
+            <img class="publish__avatar-img" src="./images/avatar.png" alt="avatar">
+        </a>
+        <div class="publish__content">
+            <form class="publish__form" action="">
+                <input class="publish__text" type="text" placeholder="What`s happened?">
+                <p class="publish__forwho">Everyone can reply</p>
+            </form>
+            <div class="publish__actions">
+                <div class="publish__actions-block">
+                    <div class="publish__actions-img">1</div>
+                    <div class="publish__actions-gif">2</div>
+                    <div class="publish__actions-gif">3</div>
+                    <div class="publish__actions-gif">4</div>
+                </div>
+                <button class="publish__btn publish__btn--disable">Publish</button>
+            </div>
         </div>
     </div>
+    <div class="news">
+        <a class="news__post" href="#" data-id="0">
+            <div class="post__top">
+                <div class="post__avatar">
+                    <img class="post__avatar-img" src="./images/avatar.png" alt="avatar">
+                </div>
+                <div class="post__author">
+                    <p class="post__name">@miirsery</p>
+                    <p class="post__date">2h</p>
+                </div>
+            </div>
+            <div class="post__center">
+                <p class="post__center-text">
+                    Hey, today I bought my dream - Sony A3 |||. The best day of my life))
+                </p>
+                <img class="post__center-img" src="./images/posts/post-1.jpg" alt="img">
+            </div>
+        </a>
+        <a class="news__post" href="#" data-id="0">
+            <div class="post__top">
+                <div class="post__avatar">
+                    <img class="post__avatar-img" src="./images/avatar.png" alt="avatar">
+                </div>
+                <div class="post__author">
+                    <p class="post__name">@miirsery</p>
+                    <p class="post__date">2h</p>
+                </div>
+            </div>
+            <div class="post__center">
+                <p class="post__center-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit temporibus culpa illum natus odio,
+                    fugit ipsa vero in accusantium delectus hic veritatis nihil quam recusandae libero inventore
+                    possimus. Beatae, animi.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis quidem amet aspernatur rem
+                    commodi impedit fuga id soluta! Voluptas at quia omnis corporis illum rem tenetur modi voluptatum et
+                    officiis!
+                </p>
+                <img class="post__center-img" src="./images/posts/post-1.jpg" alt="img">
+            </div>
+        </a>
+    </div>
+</div>
+                <div class="suggestions">
+    <p class="suggestions__title">Trends for you</p>
+    <ul class="suggestions__items">
+        <li class="suggestions__item">
+            <a href="#" class="suggestions__link">
+                <p class="suggestions__category">Rock</p>
+                <p class="suggestions__name">#Three Days Grace</p>
+            </a>
+        </li>
+        <li class="suggestions__item">
+            <a href="#" class="suggestions__link">
+                <p class="suggestions__category">Rock</p>
+                <p class="suggestions__name">#Three Days Grace</p>
+            </a>
+        </li>
+        <li class="suggestions__item">
+            <a href="#" class="suggestions__link">
+                <p class="suggestions__category">Metal</p>
+                <p class="suggestions__name">#Bullet For My Valentine</p>
+            </a>
+        </li>
+        <li class="suggestions__item">
+            <a href="#" class="suggestions__link">
+                <p class="suggestions__category">Rock</p>
+                <p class="suggestions__name">#Three Days Grace</p>
+            </a>
+        </li>
+        <li class="suggestions__item">
+            <a href="#" class="suggestions__link">
+                <p class="suggestions__category">Rock</p>
+                <p class="suggestions__name">#Three Days Grace</p>
+            </a>
+        </li>
+
+    </ul>
+</div>
+                
+            </div>
+        </div>
+    </main>
     <script src="./scripts/main.js"></script>
 </body>
 
