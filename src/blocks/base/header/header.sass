@@ -1,0 +1,24 @@
+.header
+    margin-top: 1rem
+    &__wrapper
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__logo
+        display: block
+        background: center / contain no-repeat url('../images/logo.svg')
+        width: 2rem
+        height: 2rem
+    &__current-page
+        margin-right: 10vw
+    &__search
+        border: none
+        outline-color: $color-accent
+        background-color: $color-gray
+        padding: 0.5rem 0 0.5rem 1rem
+        border-radius: 50px
+        color: #fff
+        &::placeholder
+            color: #bbbbbb
+        @media (max-width: 1024px)
+            display: none

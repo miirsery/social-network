@@ -1,0 +1,38 @@
+.aside
+    position: relative
+    max-width: 13rem    
+    &__link
+        margin: 3rem 0
+        display: block
+        position: relative
+        display: flex
+        align-items: center
+    &__link-img
+        margin-right: 2rem
+        width: 2rem
+        height: 2rem
+        background-position: center
+        background-size: contain
+        background-repeat: no-repeat
+    &__link-text
+        font-size: 1.3rem
+        @media (max-width: 1024px)
+            display: none
+    &__link-img-home
+        background-image: url('../images/aside/home.svg')
+    &__link-img-messages
+        background-image: url('../images/aside/message.svg')
+    &__link-img-bookmarks
+        background-image: url('../images/aside/bookmarks.svg')
+    &__link-img-profile
+        background-image: url('../images/aside/profile.svg')
+    &__publish
+        width: 80%
+        border: none
+        cursor: pointer
+        background-color: $color-accent
+        color: #fff
+        font-weight: 600
+        text-transform: uppercase
+        padding: 15px 30px
+        border-radius: 50px
