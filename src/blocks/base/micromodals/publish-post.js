@@ -1,2 +1,3 @@
-var MicroModal = require("micromodal")
-MicroModal.init();
+
+import MicroModal from "micromodal";
+MicroModal.init()
