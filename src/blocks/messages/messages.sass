@@ -1,15 +1,21 @@
 .chat-block
+
     width: 100%
     &__wrapper
         display: flex
         justify-content: space-between
 .chats
+    width: 45%
     &__title
         font-size: 1rem
-
+        @media  ( max-width: 880px )
+            display: none
+    @media  ( max-width: 880px )
+        display: none
 .chat
     display: flex
     max-height: 2.5rem
+
     &__info
         height: 2.5rem
         display: flex
@@ -21,7 +27,9 @@
         font-size: 0.8rem
 .message
     margin-top: -2.5rem
-    width: 60%
+    width: 100%
+    &__item
+        width: 100%
     &__info
         height: 2.5rem
         display: flex
@@ -31,9 +39,70 @@
     &__top
         display: flex
         flex-direction: row
+    &__content
+        margin-top: 1rem
+        max-height: 60vh
+        overflow-y: auto
+        width: 100%
     &__name,
     &__last-visit
         font-size: 0.8rem
+    &__form
+        margin-top: 1rem
+    &__input
+        font-weight: 300
+        font-style: italic
+        width: 90%
+        height: 8vh
+        outline: none
+        border: none
+        background-color: rgb(92 166 250)
+        color: #fff
+        padding-left: 0.5rem
+        border-radius: 0.5rem
+        &::placeholder
+            padding-left: 1rem
+            color: #fff
+    &__from
+        color: #000
+        font-family: Helvetica
+        font-weight: normal
+        font-size: 16px
+        text-align: left
+        span
+            line-height: 1.5em
+            display: inline-block
+            background: #e0e0e0
+            padding: 10px
+            border-radius: 8px
+            border-bottom-left-radius: 2px
+            max-width: 80%
+            margin-left: 10px
+            animation: floatup .5s forwards
+        &-date
+            text-align: right
+            color: #000
+            font-size: 0.8em
+    &__me
+        color: white
+        font-family: Helvetica
+        font-size: 16px
+        font-weight: normal
+        text-align: right
+        clear: both
+        span
+            line-height: 1.5em
+            display: inline-block
+            background: #5ca6fa
+            padding: 10px
+            border-radius: 8px
+            border-bottom-right-radius: 2px
+            max-width: 80%
+            margin-right: 10px
+            animation: floatup .5s forwards
+        &-date
+            font-size: 0.8em
+            text-align: left
 
 .small-avatar
     height: 2.5rem
@@ -43,3 +112,5 @@
         height: 100%
         object-fit: cover
         border-radius: 50%
+.new-message
+    margin-bottom: 1rem
