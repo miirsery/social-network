@@ -25,9 +25,9 @@
         flex-direction: column
         align-items: stretch
         justify-content: space-around
-    &__name,
-    &__last-message
-        font-size: 0.8rem
+    &__name
+        font-weight: 400
+        font-size: 0.9em
 .message
     margin-top: -2.5rem
     width: 100%
@@ -47,9 +47,13 @@
         max-height: 60vh
         overflow-y: auto
         width: 100%
-    &__name,
-    &__last-visit
-        font-size: 0.8rem
+    &__content::-webkit-scrollbar-thumb
+        background-color: rgba(92, 166, 250, 0.8)
+        outline: 0.5px solid rgb(94 144 255)
+    &__content::-webkit-scrollbar-track
+        -webkit-box-shadow: inset 0 0 6px rgba(8,142,255, 0.5)
+    &__content::-webkit-scrollbar
+        width: 0.5em
     &__form
         margin-top: 1rem
     &__input
@@ -110,6 +114,7 @@
 .small-avatar
     height: 2.5rem
     width: 2.5rem
+    margin-right: 0.5rem
     &__img
         width: 100%
         height: 100%
@@ -117,3 +122,8 @@
         border-radius: 50%
 .new-message
     margin-bottom: 1rem
+
+.message__last-visit,
+.chat__last-message
+    font-size: 0.8em
+    font-weight: 300

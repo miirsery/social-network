@@ -1,7 +1,6 @@
 let documentDate = document.querySelectorAll('.message__date')
 documentDate.forEach(date => date.innerHTML = getTime())
 
-
 function getTime() {
     let today = new Date();
     hours = today.getHours();
@@ -30,6 +29,7 @@ userInput.addEventListener('click', (e) => {
 function sendMessage() {
     messageContent.insertAdjacentHTML('beforeend', generateHtml(userInput.value, getTime()))
     userInput.value = ''
+    scrollLogic()
 }
 
 function generateHtml(text, date) {
@@ -42,3 +42,12 @@ function generateHtml(text, date) {
     </div>
     `
 }
+function scrollLogic() {
+    let shouldScroll = messageContent.scrollTop + messageContent.clientHeight === messageContent.scrollHeight
+    if (!shouldScroll) scrollToBottom() 
+}
+
+function scrollToBottom() {
+    messageContent.scrollTop = messageContent.scrollHeight
+}
+scrollToBottom()
