@@ -9,8 +9,21 @@
         background: center / contain no-repeat url('../images/logo.svg')
         width: 2rem
         height: 2rem
+        @media (max-width: 480px)
+            display: none
     &__current-page
         margin-right: 10vw
+    &__mobile-logo
+        display: none
+        height: 2rem
+        width: 2rem
+        border: none
+        background-color: transparent
+        background: center / cover no-repeat url('../images/avatar-3.jpg')
+        border-radius: 50%
+        cursor: pointer
+        @media (max-width: 480px)
+            display: block
     &__search
         border: none
         outline-color: $color-accent

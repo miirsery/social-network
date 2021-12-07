@@ -14,6 +14,7 @@
     <div class="container">
         <div class="header__wrapper">
             <a class="header__logo logo" href="/"></a>
+            <button class="header__mobile-logo"></button>
             <p class="header__current-page">Home</p>
             <form action="" class="header__form">
                 <input type="text" class="header__search search" placeholder="Search...">
@@ -74,14 +75,14 @@
                 <p class="aside__link-text">Home</p>
             </a>
         </li>
-        <li class="aside__item aside__item-mobile">
+        <li class="aside__item aside__item-frineds">
             <a class="aside__link aside__link-friends " href="./friends.html">
                 <div class="aside__link-img aside__link-img-friends"></div>
-                <p class="aside__link-text">Friends</p>
+                <p class="aside__link-text aside__link-text-friends">Friends</p>
             </a>
         </li>
         <li class="aside__item">
-            <a class="aside__link aside__link-messages " href="./messages.html">
+            <a class="aside__link aside__link-messages" href="./messages.html">
                 <div class="aside__link-img aside__link-img-messages"></div>
                 <p class="aside__link-text">Messages</p>
             </a>
@@ -92,18 +93,55 @@
                 <p class="aside__link-text">Bookmarks</p>
             </a>
         </li>
-        
+
         <li class="aside__item">
             <a class="aside__link aside__link-profile" href="#">
                 <div class="aside__link-img aside__link-img-profile"></div>
                 <p class="aside__link-text">Profile</p>
             </a>
         </li>
-        
+
     </ul>
     <button class="aside__publish btn-trigger" data-micromodal-trigger="modal-1">
         <span>Publish</span>
     </button>
+    <div class="aside__bottom">
+        <a class="aside__myprofile" href="./profile.html">
+            <div class="aside__myprofile-info">
+                <p class="aside__myprofile-title">Alex Somethingoo</p>
+                <p class="aside__myprofile-id">@miirsery</p>
+            </div>
+        </a>
+        
+    </div>
+</aside>
+<aside class="aside-mobile">
+    <ul class="aside-mobile__menu">
+        <li class="aside-mobile__item">
+            <a href="#" class="aside-mobile__link">
+                <div class="aside-mobile__link-img aside-mobile__link-img-friends"></div>
+                <p class="aside-mobile__link-text">Friends</p>
+            </a>
+        </li>
+        <li class="aside-mobile__item">
+            <a href="#" class="aside-mobile__link">
+                <div class="aside-mobile__link-img aside-mobile__link-img-bookmarks"></div>
+                <p class="aside-mobile__link-text">Bookmarks</p>
+            </a>
+        </li>
+        <li class="aside-mobile__item">
+            <a href="#" class="aside-mobile__link">
+                <div class="aside-mobile__link-img aside-mobile__link-img-messages"></div>
+                <p class="aside-mobile__link-text">Messages</p>
+            </a>
+        </li>
+        <li class="aside-mobile__item">
+            <a href="#" class="aside-mobile__link">
+                <div class="aside-mobile__link-img aside-mobile__link-img"></div>
+                <p class="aside-mobile__link-text">Logout</p>
+            </a>
+        </li>
+    </ul>
 </aside>
                 <div class="main-content">
     <div class="publish-new publish">

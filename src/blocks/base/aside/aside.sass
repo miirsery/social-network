@@ -2,15 +2,14 @@
     position: relative
     max-width: 22%
     margin-right: 2rem
+    @media (max-width: 480px)
+        display: none
     &__item
         margin: 3rem 0
         &:first-child
             margin: 0
-    &__item-mobile
-        display: none
-        @media screen and ( max-width: 880px )
-            display: block
-            margin: 1.5rem 0 -1.5rem 0
+    &__item-frineds
+        margin: 1.5rem 0 -1.5rem 0
 
     &__link
         display: block
@@ -33,6 +32,8 @@
         font-size: 1.2rem
         @media (max-width: 1024px)
             display: none
+        &-friends
+            margin-left: -1.5rem
     &__link-img-home
         background-image: url('../images/aside/home.svg')
     &__link-img-friends
@@ -62,3 +63,61 @@
             width: 0
             span
                 display: none
+    &__bottom
+        width: 25%
+        cursor: pointer
+        max-height: 3rem    
+        position: fixed
+        bottom: 5vh
+        display: flex
+    &__myprofile
+        display: block
+        width: 2rem
+        height: 2rem
+        border-radius: 50%
+        background: center / cover no-repeat url('../images/avatar-3.jpg')
+        &-title,
+        &-id
+            font-size: 0.8em
+    &__myprofile-info
+        margin-left: 2.5rem
+.aside-mobile
+    visibility: hidden
+    opacity: 0
+    background: rgba(0, 0, 0, 0.5)
+    position: absolute
+    z-index: 100
+    top: -5vh
+    width: 75%
+    height: 60vh
+    transition: all 0.3s
+    transform: translateX(-150%)
+    &__item
+        padding: 0.5rem 0
+
+    &__link
+        display: block
+        display: flex
+        align-items: center
+        justify-content: start
+    &__link-img
+        dmargin-right: 2rem
+        width: 1rem
+        height: 1rem
+        background-position: center
+        background-size: contain
+        background-repeat: no-repeat
+        margin-right: 0.5rem
+        &-messages
+            background-image: url('../images/aside/message.svg')
+        &-bookmarks
+            background-image: url('../images/aside/bookmarks.svg')
+        &-friends
+            background-image: url('../images/aside/friends.svg')
+@media (max-width: 480px)
+    .aside-mobile--active
+        visibility: visible
+        opacity: 1
+        transform: translateX(0)
+
+
