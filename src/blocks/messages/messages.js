@@ -1,7 +1,5 @@
 
 document.addEventListener('DOMContentLoaded', (e) => {
-    // if (window.location.pathname == '/messages/html')
-    // {  }
     let documentDate = document.querySelectorAll('.message__date')
     documentDate.forEach(date => date.innerHTML = getTime())
 

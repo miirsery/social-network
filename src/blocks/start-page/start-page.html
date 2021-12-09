@@ -1,13 +1,26 @@
 <div class="start-page">
-    <form class="start-page__form" action="">
-        <div class="registration">
-            <button class="registration__google start-page__btn">Registration with Google</button>
-            <button class="registration__facebook start-page__btn">Registration with Facebook</button>
-            <button class="registration__there start-page__btn">Registration</button>
-        </div>
-        <div class="authorization">
-            <p class="authorization__title">Already registrated?</p>
-            <button class="authorization__btn start-page__btn">Log in</button>
-        </div>
-    </form>
+    <div class="registration">
+        <h2 class="registration__title">Registration</h2>
+        <form class="registration__form form-flex" action="">
+            <label for="registration__input-username">Username</label>
+            <input id="registration-username" class="start-page__input registration__input-username" type="text">
+            <label for="registration__input-email">Email</label>
+            <input id="registration-email" class="start-page__input registration__input-email" type="email">
+            <label for="registration__input-password">Password</label>
+            <input id="registration-password" class="start-page__input registration__input-password" type="password">
+            <label for="registration__input-retrypassword">Retry password</label>
+            <input id="registration-retrypassword" class="start-page__input registration__input-retrypassword" type="password">
+            <button class="registration__btn form-btn">Sing up</button>
+        </form>
+    </div>
+    <div class="authorization">
+        <h2 class="authorization__title">Authorization</h2>
+        <form class="authorization__form form-flex" action="">
+            <label for="authorization__input-username">Username</label>
+            <input id="authorization-username" class="start-page__input authorization__input-username" type="text">
+            <label for="authorization__input-password">Password</label>
+            <input id="authorization-password" class="start-page__input authorization__input-password" type="password">
+            <button class="registration__btn form-btn">Sign in</button>
+        </form>
+    </div>
 </div>

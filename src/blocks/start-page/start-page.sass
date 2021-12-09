@@ -1,14 +1,33 @@
 .start-page
-    &__btn
-        cursor: pointer
-        width: 15%
-        padding: 0.5rem 0
-        border: 1px solid rgba(255, 255, 255, 0.3)
-        border-radius: 50px
+    margin-top: 2rem
+    display: flex
+    justify-content: space-between
+    &__input
+        border: none
         background-color: transparent
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5)
+        padding-top: 0.5rem
+        margin-bottom: 0.5rem
         color: #fff
-.registration
+.registration,
+.authorization
+    width: 45%
+    &__title
+        margin-bottom: 1rem
+.form-flex
     display: flex
     flex-direction: column
-    &>button
-        margin-bottom: 1rem
+    align-items: flex-start
+
+.form-btn
+    margin-top: 1rem
+    padding: 10px 15px
+    color: #fff
+    cursor: pointer
+    background-color: $color-accent
+    border: none
+    transition: all 0.5s
+    border-radius: 50px
+    &:hover
+        background-color: #5dd7fcb7
+        filter: brightness(130%) drop-shadow(0 0 0.3rem #bff0ffb7)
